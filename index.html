@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap_test</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
-    <header class="mt-4 p-5 bg-light text-black rounded">
+    <header class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row header-row">
                 <div class="col-12 col-sm-6">
-                    <h1>Lorem, ipsum dolor.</h1>
+                    <h1 style="color: floralwhite;">Lorem, ipsum dolor.</h1>
                     <hr class="my4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, labore praesentium quo quos molestiae earum deleniti
                     est temporibus nisi.</p>
@@ -25,7 +26,7 @@
     </header>
     
     <div class="container">
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Lorem ipsum dolor sit.</h3>
             </div>
@@ -35,7 +36,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facilis?</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>Lorem ipsum dolor sit.</h3>
             </div>
@@ -45,7 +46,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facilis?</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Lorem ipsum dolor sit.</h3>
             </div>
@@ -58,12 +59,12 @@
         
     </div>
     
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links.</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -80,17 +81,19 @@
                         email: <a href="#">asd@asdf</a>;<br>
                     </address>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <a href="#">facebook</a>
-                    <a href="#">linkdin</a>
-                    <a href="#">twiter</a>
-                    <a href="#">gmail</a>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="#">facebook</a>
+                        <a href="#">linkdin</a>
+                        <a href="#">twiter</a>
+                        <a href="#">gmail</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-auto">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur.
+                        @ Lorem ipsum dolor sit amet consectetur.
                     </p>
                 </div>
             </div>
