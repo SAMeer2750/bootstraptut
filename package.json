@@ -1,0 +1,17 @@
+{
+  "name": "bootstraptut",
+  "version": "1.0.0",
+  "description": "bootstrap directory",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  
+  "author": "Sameer Madhav D",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
