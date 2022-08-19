@@ -5,19 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap_test</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto">Restorente Con Fusion</a>
+            
+                <ul class="navbar-nav mr-auto collapse navbar-collapse" id="Navbar">
+                    <li class="nav-item"><a class="nav-link active" href="#"> <span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="aboutus.html"> <span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            
+            
+        </div>
+    </nav>
+
     <header class="jumbotron">
         <div class="container">
-            <div class="row header-row">
+            <div class="row row-header">
                 <div class="col-12 col-sm-6">
-                    <h1 style="color: floralwhite;">Lorem, ipsum dolor.</h1>
+                    <h1>Restorente Con Fusion</h1>
                     <hr class="my4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, labore praesentium quo quos molestiae earum deleniti
-                    est temporibus nisi.</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm">
                 </div>
@@ -63,7 +83,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links.</h5>
+                    <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -74,31 +94,31 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-                        Lorem ipsum dolor sit amet.;<br>
-                        Lorem ipsum dolor sit amet consectetu;<br>
-                        Honkongbr
-                        tel:1234567890;<br>
-                        email: <a href="#">asd@asdf</a>;<br>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
                     </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a href="#">facebook</a>
-                        <a href="#">linkdin</a>
-                        <a href="#">twiter</a>
-                        <a href="#">gmail</a>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebooke" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <p>
-                        @ Lorem ipsum dolor sit amet consectetur.
-                    </p>
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
             </div>
         </div>
-        
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
