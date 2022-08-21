@@ -32,7 +32,7 @@
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
+            <div class="row row-header ">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante Con Fusion</h1>
                     <hr class="my4">
@@ -42,13 +42,18 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="./img/logo.png" alt="logo" class="img-fluid">
                 </div>
+                <div class="col col-sm-4 align-self-center">
+                    <div class="d-grid gap-2 col-8 mx-auto">
+                        <a class="btn btn-warning btn-sm" href="#reserve" role="button">Reserve Table</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mt-2">
                 <h3>Home</h3>
                 <hr>
             </div>
@@ -58,12 +63,17 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-12 col-sm order-sm-first col-md">
-                <div class="media">
-                    <img src="./img/uthappizza.png" alt="uthapip" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                    <h2 class="mt-0">Uthappizza</h2>
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry
-                        tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="./img/uthappizza.png" alt="uthapip" class="d-flex mr-3 img-thumbnail align-self-center">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span> <span
+                                class="badge rounded-pill bg-secondary">$14.5</span> </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
+                            olives, ripe vine cherry
+                            tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
                     
@@ -74,13 +84,17 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm col-md">
-                <div class="media">
-                    <img src="./img/buffet.png" alt="" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                
+                <div class="d-flex align-items-center">
+                    
+                    <div class="flex-grow-1 ms-3">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing
                             appetizers, six main
                             entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="./img/buffet.png" alt="" class="d-flex mr-3 img-thumbnail align-self-center">
                     </div>
                 </div>
                 
@@ -91,10 +105,12 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-12 col-sm order-sm-first col-md">
-                <div class="media">
-                    <img src="./img/soma.jpg" alt="" class="dflex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2>Alberto Somayya</h2>
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="./img/soma.jpg" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h2>Sōma Yukihira</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked
                             closely with whos-who in the
@@ -104,7 +120,64 @@
                 
             </div>
         </div>
-        
+        <div class="row row-content align-items-center" id="reserve">
+            <div class="col-sm-2"></div>
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white mx">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form action="https://formspree.io/f/xgeqvwkz" method="post">
+                            <div class="form-group row align-items-center">
+                                <label for="noofguest" class="col-md-2 col-form-label">No of Guests</label>
+                                <div class="col-md-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="noofguest" id="one" value="option1">
+                                        <label class="form-check-label" for="one">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="noofguest" id="two" value="option2">
+                                        <label class="form-check-label" for="two">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="noofguest" id="three" value="option3">
+                                        <label class="form-check-label" for="three">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="noofguest" id="four" value="option3">
+                                        <label class="form-check-label" for="four">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="noofguest" id="five" value="option3">
+                                        <label class="form-check-label" for="five">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="noofguest" id="six" value="option3">
+                                        <label class="form-check-label" for="six">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row align-items-center">
+                                <label for="time" class="col-form-label col-md-2">Date and Time</label>
+                                <div class="col-md-4">
+                                    <input type="date" name="date" id="time" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="time" name="time" id="time" class="form-control">
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <div class="form-group row align-items-center">
+                                <div class="col-md-2 offset-md-2">
+                                    <button type="submit" class="btn btn-primary ">Reserve</button>
+                                </div>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <footer class="footer">
@@ -136,7 +209,7 @@
                         <a class="btn btn-social-icon btn-facebooke" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                     </div>
                 </div>
