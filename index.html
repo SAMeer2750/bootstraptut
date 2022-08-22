@@ -25,10 +25,48 @@
                     <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"> <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-            
-            
+                <div class="navbar-text">
+                    <a data-bs-toggle="modal" data-bs-target="#loginmodal">
+                        <span class="fa fa-sign-in"> Login</span>
+                    </a>
+                </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="loginmodal" role="dialog">
+        <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row align-items-center">
+                            <label for="userid" class="col-form-label">User id:</label>
+                            <input type="text" name="uderid" id="userid" class="form-control">
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label for="pass" class="col-form-label">Passward:</label>
+                            <input type="password" name="pass" id="pass" class="form-control">
+                        </div>
+                        <div class="form-group row mt-3 align-self-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button class="btn btn-secondary btn-sm ml-auto" type="button" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Sign in</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -44,7 +82,7 @@
                 </div>
                 <div class="col col-sm-4 align-self-center">
                     <div class="d-grid gap-2 col-8 mx-auto">
-                        <a class="btn btn-warning btn-sm" href="#reserve" role="button">Reserve Table</a>
+                        <a class="btn btn-warning btn-sm" href="#reserve" role="button" data-bs-toggle="tooltip" data-html="true"  title="Or Call us at 9019875612">Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -222,8 +260,9 @@
         </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
